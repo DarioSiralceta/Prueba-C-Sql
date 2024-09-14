@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProyectoDiscos
+namespace dominio
 {
-    internal class TipoEdicion
+    public class Estilo
     {
-        public int id { get; set; }
+        public int id {  get; set; }
 
         public string Descripcion { get; set; }
 

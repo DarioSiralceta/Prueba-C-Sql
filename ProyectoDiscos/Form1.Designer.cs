@@ -37,19 +37,21 @@
             // dataGridDisco
             // 
             this.dataGridDisco.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridDisco.Location = new System.Drawing.Point(58, 31);
+            this.dataGridDisco.Location = new System.Drawing.Point(12, 44);
+            this.dataGridDisco.MultiSelect = false;
             this.dataGridDisco.Name = "dataGridDisco";
+            this.dataGridDisco.ReadOnly = true;
             this.dataGridDisco.RowHeadersWidth = 51;
             this.dataGridDisco.RowTemplate.Height = 24;
-            this.dataGridDisco.Size = new System.Drawing.Size(579, 293);
+            this.dataGridDisco.Size = new System.Drawing.Size(750, 293);
             this.dataGridDisco.TabIndex = 0;
             this.dataGridDisco.SelectionChanged += new System.EventHandler(this.dataGridDisco_SelectionChanged);
             // 
             // pictureBoxDisco
             // 
-            this.pictureBoxDisco.Location = new System.Drawing.Point(669, 53);
+            this.pictureBoxDisco.Location = new System.Drawing.Point(785, 44);
             this.pictureBoxDisco.Name = "pictureBoxDisco";
-            this.pictureBoxDisco.Size = new System.Drawing.Size(317, 271);
+            this.pictureBoxDisco.Size = new System.Drawing.Size(305, 293);
             this.pictureBoxDisco.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxDisco.TabIndex = 1;
             this.pictureBoxDisco.TabStop = false;
@@ -58,10 +60,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1014, 450);
+            this.ClientSize = new System.Drawing.Size(1120, 363);
             this.Controls.Add(this.pictureBoxDisco);
             this.Controls.Add(this.dataGridDisco);
+            this.MaximumSize = new System.Drawing.Size(1138, 410);
+            this.MinimumSize = new System.Drawing.Size(1138, 410);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Disco";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridDisco)).EndInit();
